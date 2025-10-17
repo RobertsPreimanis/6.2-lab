@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Ld6_251rdc028 {
+class Ld6_251rd028 {
   public static void main(String[] args) {
     int i,j,x = 1,y = 0, a[][] = new int[10][10];
     System.out.println("Roberts Preimanis 16 251RDC028");
@@ -26,6 +26,17 @@ class Ld6_251rdc028 {
         break;
       }
       case 2: {
+        for(i=0;i<10;i++){
+          for(j=i;j<10;j++){
+            a[i][j] = 10 - j + i;
+          }
+        }
+        for(i=0;i<10;i++){
+          for(j=0;j<10;j++){
+            System.out.print(a[i][j] + "\t");
+          }
+          System.out.println();
+        }
         break;
       }
       default: {
